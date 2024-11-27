@@ -5,7 +5,10 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props as Form;
 ---
 
-<form>
+<form
+  action="https://formspree.io/f/mvgowbgg"
+  method="POST"
+>
   {
     inputs &&
       inputs.map(

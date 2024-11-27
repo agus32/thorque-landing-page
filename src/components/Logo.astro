@@ -1,7 +1,19 @@
 ---
 import { SITE } from '~/utils/config';
+import LogoThorqueOscuro from '~/assets/images/thorque_oscuro.png';
+import LogoThorqueClaro from '~/assets/images/thorque_claro.png';
 ---
 
 <span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  ⚙️ {SITE?.name}
+  <img
+    alt={SITE?.name|| 'Logo Thorque'}
+    src={LogoThorqueOscuro.src}
+    class="max-w-[250px] max-h-[250px] object-contain dark:hidden"
+  />
+  <img 
+  alt={SITE?.name|| 'Logo Thorque'}
+  src={LogoThorqueClaro.src}  
+  class="max-w-[250px] max-h-[250px] object-contain hidden dark:block"
+  />
+
 </span>
