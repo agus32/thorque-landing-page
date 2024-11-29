@@ -1,5 +1,5 @@
-import * as THREE from '/node_modules/three/build/three.module.js';
-import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls';
+import * as THREE from '/scripts/three.module.js';
+import { OrbitControls } from '/scripts/OrbitControls.js';
 
 const container = document.getElementById('earth-container');
 if (container) {
@@ -33,7 +33,7 @@ if (container) {
     vertexShader,
     fragmentShader,
     uniforms: {
-      glowColor: { value: new THREE.Color(0x1FACAC) },
+      glowColor: { value: new THREE.Color(0x6d28d9) },//1FACAC
       bias: { value: 0.1 },
       power: { value: 2.0 },
       time: { value: 0.0 },
