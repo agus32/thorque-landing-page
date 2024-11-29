@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Home
-    template: '%s — Thorque Software'
+    template: '%s - Thorque Software'
   description: "\U0001F680 Software a medida para pequeñas, medianas y grandes empresas."
   robots:
     index: true
